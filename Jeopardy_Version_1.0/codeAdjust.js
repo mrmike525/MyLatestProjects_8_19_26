@@ -179,6 +179,9 @@ const makeStartButton = () => {
     categorySelect.id = "numberOfCategories";
     categorySelect.classList.add('numberOfCategories');
     const label = document.createElement('label');
+    const labelDiv = document.createElement('div');
+    labelDiv.classList.add('labelDiv')
+    label.classList.add('categoryLabel')
     label.setAttribute('for', 'numberOfCategories');
     label.innerText = "Choose number of Categories before pressing Start"
     for(let x = 1; x <= 14; x++){
@@ -187,7 +190,8 @@ const makeStartButton = () => {
         selectOption.innerText = x
         categorySelect.append(selectOption);
     }
-    body.append(label);
+    body.append(labelDiv);
+    labelDiv.append(label)
     label.append(categorySelect);
 
 
@@ -195,6 +199,9 @@ const makeStartButton = () => {
         const numberOfCategories = document.querySelector('.numberOfCategories');
         const label = document.querySelector('label');
         
+        const divLabel = document.querySelector('.labelDiv');
+        // divLabel.classList.add('hidden')
+        label.classList.add('hidden')
         setTimeout(()=>{numberOfCategories.remove(); label.remove()}, 6000)
         startButtonDiv.remove();
         const spinner = document.getElementById("spinner");
