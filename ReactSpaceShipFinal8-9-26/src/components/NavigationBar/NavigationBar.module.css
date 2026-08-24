@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    background-color: rgb(68, 20, 20);
+    justify-content: space-around;
+    position: relative;
+    bottom: 25px;
+}
+a {
+    margin: 3px;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
