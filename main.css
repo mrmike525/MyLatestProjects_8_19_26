@@ -172,7 +172,29 @@ main section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
 }
+
+.projectDiv p{
+text-align: center;
+font-size: 30px;
+}
+
+.projectLinks {
+    font-size: 50px;
+    text-decoration: none;
+    color: blue;
+}
+.projectLinks:hover {
+    color: red;
+}
+.education {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
 /* adjustments to help keep the formating looking good while adjusting pixeld width from 475 and up */
 @media (max-width: 700px) {
     #fun {
