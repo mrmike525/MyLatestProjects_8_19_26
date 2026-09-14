@@ -1,0 +1,29 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    text-align: center;
+    flex-flow: row;
+
+}
+main {
+    display: flex;
+    
+}
+.me {
+    /* width: 100vw; */
+    height: 75vh;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    justify-content: center;
+}
+.abby {
+    /* width: 100vw; */
+    height: 75vh;
+    margin-left: 0;
+    margin-top: 5vh;
+    justify-content: center;
+}

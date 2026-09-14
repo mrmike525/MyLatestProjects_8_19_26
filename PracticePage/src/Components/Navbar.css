@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    flex-direction: row;
+}
+nav  a{
+  
+   
+    display: flex;
+    margin: 2px;
+    
+    text-decoration: none;
+    color: red
+}
+nav a:hover {
+    color: aquamarine;
+}
+.anchor {
+    border: 2px solid black;
+    width: 100%;
+}
