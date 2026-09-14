@@ -9,16 +9,17 @@ function App() {
 
   return (
     <>
-    <nav>
-      <a href="https://mrmike525.github.io/MyLatestProjects_8_19_26/" target='_none'>
-      <ColorRender word= {["Michael Loves Abby!!"]}/>
-      </a>
-      </nav>
       <Header/>
       <Main/>
       <Footer/>
           
-          </>
+
+          {/* <nav>
+      <a href="https://mrmike525.github.io/MyLatestProjects_8_19_26/" target='_none'>
+      <ColorRender word= {["Michael Loves Abby!!"]}/>
+      </a>
+      </nav> */}
+    </>
   )
 }
 

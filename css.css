@@ -1,0 +1,10 @@
+@keyframes changeColors {
+    0% { color: red; }
+    33% { color: blue; }
+    66% { color: green; }
+    100% { color: red; }
+}
+
+.changing-text {
+    animation: changeColors 4.5s linear infinite
+}

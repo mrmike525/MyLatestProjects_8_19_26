@@ -1,3 +1,42 @@
-img {
-    width: 20%;
+.headliner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: -50px;
+}
+.headshot {
+    width: 30%;
+    border-radius: 1200px;
+    border: 2px solid #CED0CE;
+    position: relative;
+    top: -20px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.headtext {
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    color: #3e8d21;
+    font-size: 50px;
+    font-family: "lavishly yours", Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+
+}
+
+
+@media (max-width: 608px){
+    .headshot {
+        display: block;
+        position: relative;
+        /* margin-bottom: 25px; */
+        width: 80%;
+        
+    }
+    main {
+        text-align: center;
+    }
+    
 }

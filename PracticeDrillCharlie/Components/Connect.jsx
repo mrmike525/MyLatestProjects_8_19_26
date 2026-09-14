@@ -10,7 +10,7 @@ const Connect = () => {
                 </li>
                 </ul>
                 <p>Learn more about my journey with 
-                    <a href="https://www.springboard.com/" target="_blank">SpringBoard</a>
+                    <a href="https://www.springboard.com/" target="_blank"> SpringBoard</a>
                 </p>
             </section>
         

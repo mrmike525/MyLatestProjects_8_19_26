@@ -1,0 +1,13 @@
+.projects {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.projectpic {
+    width: 50%;
+    
+    
+}

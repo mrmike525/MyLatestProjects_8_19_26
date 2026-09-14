@@ -1,0 +1,10 @@
+li {
+    list-style-position: inside;
+    width: fit-content;
+    font-size: 15px;
+}
+@media (max-width: 324px){
+    li {
+        font-size: 11px
+    };
+}
