@@ -1,7 +1,13 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 * a{
     font-family: "Limelight", sans-serif;
     color: #3F403F;
     text-decoration: none;
+    
 }
 * a:hover {
     color: #26bfad
@@ -10,6 +16,7 @@ body {
    min-height: 500px;
    margin: 10px;
    background-color: #E6E8E6;
+   
 }
 
 div h1{

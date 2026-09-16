@@ -35,8 +35,14 @@
         width: 80%;
         
     }
+    .headtext {
+        margin-top: 25px;
+    }
     main {
         text-align: center;
+    }
+    .projects h4, .projects img{
+        margin-top: 20px;
     }
     
 }
