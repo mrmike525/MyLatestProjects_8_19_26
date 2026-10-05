@@ -235,8 +235,90 @@ const regexArrayHotel = [
 ]
 
 for (const items of regexArrayHotel) {
-    if (/[foo]/.test(items)) {
+    if (/^foo.*/.test(items)) {
         console.log("Solution 11 :", items)
+    }
+}
+
+const regexArrayIndia = [
+    "foo bar baz",
+    "bar foo baz",
+    "baz foo bar",
+    "bar baz foo",
+    "foo baz bar",
+    "baz bar foo"
+]
+
+for (const items of regexArrayIndia) {
+    if (/.*bar$/.test(items)) {
+        console.log("Solution 12 :", items)
+    }
+}
+
+const regexArrayJuliet = [
+    "foo",
+    "foo bar",
+    "baz foo",
+    "foo bar baz",
+    "baz bar foo",
+]
+
+for (const items of regexArrayJuliet) {
+    if (/^foo$/.test(items)) {
+        console.log("Solution 13 :", items)
+    }
+}
+
+const regexArrayKilo = [
+    "834",
+    "519",
+    "4874",
+    "5",
+    "89",
+    "45687",
+    "25",
+    "645"
+]
+
+for (const items of regexArrayKilo) {
+    if (/a*/.test(items)) {
+        console.log("Solution 14 :", items)
+    }
+}
+
+const regexArrayLima = [
+    "ha",
+    "hahahahaha",
+    "hahaha",
+    "hahahaha",
+    "haha",
+    "",
+    "hahahahahaha",
+    "hahahahahahahaha",
+    "hahahahahahahahaha"
+]
+
+for (const items of regexArrayLima) {
+    if (/^(ha){4,9}$/.test(items)) {
+        console.log("Solution 15 :", items)
+    }
+}
+
+const regexArrayMike = [
+    "fooaaaabar",
+    "fooabar",
+    "hahaha",
+    "hahahaha",
+    "haha",
+    "",
+    "hahahahahaha",
+    "hahahahahahahaha",
+    "hahahahahahahahaha"
+]
+
+for (const items of regexArrayMike) {
+    if (/^(ha){4,9}$/.test(items)) {
+        console.log("Solution 16 :", items)
     }
 }
 // regex notes . = any character including space between them, 
@@ -250,4 +332,31 @@ for (const items of regexArrayHotel) {
 //  "/" forward slash
 // . inside class container intreprets the period as a literal period instead of a wildcard so there is no need to escape, however there are some symbols that have special meaning inside class containers.. so they will need to be escaped inside class containers
 // ^ is a placeholder that signifies beginning of a line. the interpretation of ^ differs within square brackets and outside of it. Inside square brackets [], ^ stand for negation, Outside, it is a placeholder for beginning of line.
+// $ is a placeholder that signifies the end of a line **put $ at the end!
 
+
+
+// ---------The extended set vs (the upper regular set)-----
+//  + One or more occurrences of the character that precedes this + symbol
+// ? Zero or one occurence of the character that precedes this question mark
+// pat1|pat2 Matches either the pattern pat1 or the pattern pat2
+// () divides patterns into groups
+// {m} Exactly 'm' occurences of whatever precedes
+// {m,n} Atleast m and at most n occurences of whatever precedes Only one of m, n is mandatory. Other can be left blank.
+// parenthesis () are used as a way to treat as a single entity
+
+
+// chatgpt notes.. that "clarifies my notes"
+// .  = any single character, except line breaks by default
+// *  = zero or more of the previous token
+// +  = one or more of the previous token
+// [] = character class: match one character from this set
+// [j-m] = character range
+// [^mh] = anything except m or h
+// ^  = start of string; inside [] at the beginning, means negation
+// $  = end of string
+// \  = escape character in regex
+// /  = wraps a regex literal in JavaScript
+// \. = literal period
+// \\ = literal backslash
+// . inside [] is already literal
