@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.listContainer {
+    height: 95vh;
+}
+.mainList {
+    position: relative;
+    color: red;
+    list-style: inside;
+    
+
+}
+.mainList li{
+    position: absolute;
+    top: 10%;
+}
