@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.listContainer {
+    height: 95vh;
+    position: relative;
+    /* border: 2px solid black; */
+    
+    background-image: linear-gradient(to right, rgba(68, 83, 150, 0.91), rgb(163, 39, 39));
+}
+.listContainer ul {
+    position: relative;
+    color: rgba(4, 14, 14, 0.605);
+    /* border: 2px solid red; */
+    width: 60vw;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    left: 20%;
+}
+.mainList {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    /* transform: translate(-50%, -50%); */
+}
+.listInput {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.listButton {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+.listLabel {
+    font-size: 35px;
+}
+.divCharlie {
+    position: relative;
+    height: 95vh;
+    background-color: orange;
+}
+nav {
+    position: absolute;
+    left: 15%;
+    
+}
+.nav-links {
+margin: 10px;
+text-decoration: none;
+
+}
