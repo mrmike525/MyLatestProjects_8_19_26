@@ -307,18 +307,29 @@ for (const items of regexArrayLima) {
 const regexArrayMike = [
     "fooaaaabar",
     "fooabar",
-    "hahaha",
-    "hahahaha",
-    "haha",
-    "",
-    "hahahahahaha",
-    "hahahahahahahaha",
-    "hahahahahahahahaha"
+    "foobar",
+    "fooaabar",
+    "fooxxxbar",
+    "fooxbar",
 ]
 
 for (const items of regexArrayMike) {
-    if (/^(ha){4,9}$/.test(items)) {
+    if (/fooa+bar/.test(items)) {
         console.log("Solution 16 :", items)
+    }
+}
+
+const regexArrayNovember = [
+    "https://website",
+    "http://website",
+    "httpss://website",
+    "httpx://website",
+    "httpxx://website"
+]
+
+for (const items of regexArrayNovember) {
+    if (/a/.test(items)) {
+        console.log("Solution 17 :", items)
     }
 }
 // regex notes . = any character including space between them, 
@@ -344,7 +355,8 @@ for (const items of regexArrayMike) {
 // {m} Exactly 'm' occurences of whatever precedes
 // {m,n} Atleast m and at most n occurences of whatever precedes Only one of m, n is mandatory. Other can be left blank.
 // parenthesis () are used as a way to treat as a single entity
-
+// a+ (plus means One or more occcurences of 'a'(The character just preceding the plus symbol))
+// a? 
 
 // chatgpt notes.. that "clarifies my notes"
 // .  = any single character, except line breaks by default
@@ -360,3 +372,82 @@ for (const items of regexArrayMike) {
 // \. = literal period
 // \\ = literal backslash
 // . inside [] is already literal
+// ? means true or false to the character preceding it
+// | means or... example (fish|taco) means catch fish or taco i think this needs to be in parenthesis
+// regex - group capture, find and replace
+// steps 1. what needs to be replaced? 2. What should be the replacement?
+// steps 2. represent the patterns using regex. enclose the patterns that need to be replaced with parenthesis to segregate them into capture groups
+// set 3. come up with a substitution string by using captured pattern groups
+// step 4. use a regex enabled find and replace engine to do the replacement
+
+
+const regexArrayOscar = [
+    "1280x720",
+    "1920x1080",
+    "1600x900",
+    "1280x1024",
+    "800x600",
+    "1024x768",
+]
+
+for (const items of regexArrayOscar) {
+    const result = items.replace(
+        /([0-9]+)x([0-9]+)/,
+        "$1 pix by $2 pix"
+    )
+        console.log("Solution 18 :", result)
+}
+
+const regexArrayPapa = [
+    "john Wallace",
+    "Steve King",
+    "Martin Cook",
+    "Adam Smith",
+    "Irene Peter",
+    "Alice Johnson",
+]
+
+for (const items of regexArrayPapa) {
+    const result = items.replace(
+        /([a-zA-Z]+)\s([a-zA-Z]+)/,
+        "$2, $1"
+    )
+        console.log("Solution 19 :", result)
+}
+
+// in the terminal we want to type in our replacement commands as sed (followed by command)
+// example sed -r 's/([a-zA-Z]+)\s([a-zA-Z]+/\2, \1/g' regext26.txt (filename is regex26))
+
+const regexArrayQuebec = [
+    "7:32",
+    "6:12",
+    "12:23",
+    "1:23",
+    "11:33",
+    "4:21",
+]
+
+for (const items of regexArrayQuebec) {
+    const result = items.replace(
+        /([0-9]+):([0-9]+)/,
+        "$2 mins past $1"
+    )
+        console.log("Solution 20 :", result)
+}
+
+const regexArrayRomeo = [
+    "914.582.3013",
+    "873.334.2589",
+    "521.589.3147",
+    "625.235.3698",
+    "895.568.2145",
+    "745.256.3369",
+]
+
+for (const items of regexArrayRomeo) {
+    const result = items.replace(
+        /[0-9]{3}\.[0-9]{3}\.([0-9]{4})/,
+        "xxx.xxx.$1"
+    )
+        console.log("Solution 21 :", result)
+}
