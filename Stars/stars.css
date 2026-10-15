@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nameBox {
+    position: relative;
+    height: 95vh;
+    background-color: black;
+    background-image: linear-gradient(to left, rgba(0,0,0,.8), rgb(172, 24, 24,.8)), url("./assets/mike.jpeg"); 
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+.name {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    transition: font-size 1s;
+    display: block;
+    /* background-color: grey; */
+    width: 100%;
+    text-align: center;
+      
+}
+.name:hover {
+    font-size: 100px;
+    
+    
+}

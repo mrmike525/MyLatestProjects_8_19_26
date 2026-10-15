@@ -94,7 +94,15 @@ const linkArray = [
     { text: "Contact", link: "#" },
     { text: "My Story", link: "#" },
 ]
+
+
+
+
+
+navSection(linkArray);
+
 const regexArray = [
+    "foofoofoofoo",
     "foo",
     "moo",
     "coo",
@@ -104,36 +112,14 @@ const regexArray = [
     "boo",
     "hoo"
 ]
-const regexArrayBeta = [
-    "joo",
-    "boo",
-    "koo",
-    "loo",
-    "woo",
-    "moo",
-    "zoo",
-    "coo",
-
-]
-const regexArrayCharlie = [
-    "joo",
-    "boo",
-    "Koo",
-    "Loo",
-    "woo",
-    "moo",
-    "zoo",
-    "coo",
-
-]
-
-
-navSection(linkArray);
-
-
 for (const items of regexArray) {
     if (/[fcl]oo/.test(items)){
         console.log("Solution 1:",items)
+    }
+}
+for (const items of regexArray) {
+    if (/f+/.test(items)){
+        console.log("Solution test:",items)
     }
 }
 
@@ -148,7 +134,17 @@ for (const items of regexArray) {
         console.log("Solution 3:", items)
     }
 }
+const regexArrayBeta = [
+    "joo",
+    "boo",
+    "koo",
+    "loo",
+    "woo",
+    "moo",
+    "zoo",
+    "coo",
 
+]
 for (const items of regexArrayBeta) {
     if (/[j-m]oo/.test(items)){
         console.log("Solution 4:", items)
@@ -160,7 +156,17 @@ for (const items of regexArrayBeta) {
         console.log("Solution 5:", items)
     }
 }
+const regexArrayCharlie = [
+    "joo",
+    "boo",
+    "Koo",
+    "Loo",
+    "woo",
+    "moo",
+    "zoo",
+    "coo",
 
+]
 for (const items of regexArrayCharlie) {
     if (/[j-mJ-Mz]oo/.test(items)){
         console.log("Solution 6:", items)
@@ -451,3 +457,65 @@ for (const items of regexArrayRomeo) {
     )
         console.log("Solution 21 :", result)
 }
+
+// exmaple of solution 21 for the command line: set -r 's/[0-9]{3}\.[0-9]{3}\.([0-9]{4})/xxx.xxx.\1/g' regex.txt
+
+const regexArraySierra = [
+    "Jan 5th 1987",
+    "Dec 26th 2010",
+    "Mar 2nd 1923",
+    "Oct 1st 2008",
+    "Aug 3rd 2009",
+    "Jun 10th 2001",
+]
+
+for (const items of regexArraySierra) {
+    const result = items.replace(
+        /([a-zA-Z]{3})\s([0-9]{1,2})[a-z]{2}\s[0-9]{2}([0-9]{2})/,
+        "$2-$1-$3"
+    )
+    console.log("Solution 22 :", result);
+}
+
+// sed -r 's/([a-zA-Z]{3})\s([0-9]{1,2})[a-z]{2}\s[0-9]{2}/\2-\1-\3/g' regex29.txt
+
+const regexArrayTango = [
+    "(914).582.3013",
+    "(873).334.2589",
+    "(521).589.3147",
+    "(625).235.3698",
+    "(895).568.2145",
+    "(745).256.3369",
+]
+
+for (const items of regexArrayTango) {
+    const result = items.replace(
+        /\(([0-9]{3})\)(\.[0-9]{3}\.[0-9]{4})/,
+        "$1$2"
+    )
+    console.log("Solution 23 :", result);
+}
+// sed -r 's/\(([0-9]{3})\)(\.[0-9]{3}\.[0-9]{4})/\1\2/g' regex30.txt
+
+const regexArrayUniform = [
+    "bob.123@gmail.com",
+    "alice-personal@yahoo.in",
+    "admin@cloud.guru",
+    "tom_business@amazon.ca",
+    "george@yahoo",
+    "robert_at_gmail.com",
+    "steve austin@gmail.com"
+]
+
+for (const items of regexArrayUniform) {
+    const result = items.replace(
+        /([a-z]{3, 5}\.?-?)[0-9]+[a-z]+@?/,
+        "$1"
+    )
+    console.log("Solution 24 :", result);
+}
+// rules local part, then at the rate symbol@. minimum of 2 letters needed after the dot, 
+// any valid email should have an at the rate symobl, local part on the left and and domain name on the right of the at a rate symbol.. a minimum of 2 letters needed after the domain name.. on the left, some characters are allowed and some disallowed, 
+// letters are allowed, digits, underscore, hypen, dot are all allowed.. all others disallowed
+// come up with a regular expression that represents all these rules
+// frame regex in such a way, if it is a match, no rules have been violated.. if it's not a match your regex engine should return a no match
