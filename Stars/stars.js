@@ -11,10 +11,17 @@ nameBox.append(name)
 
 const colorCycle = [
     "Crimson",
+    returnRandomColor,
     "Gold",
+    returnRandomColor,
     "OrangeRed",
+    returnRandomColor,
     "MediumOrchid",
-    "MediumBlue"
+    returnRandomColor,
+    "MediumBlue",
+    returnRandomColor,
+    
+    
 ]
 
 const cycleColors = (element) => {
@@ -23,9 +30,24 @@ const cycleColors = (element) => {
         if (index === colorCycle.length) {
             index = 0
         }
+        if (colorCycle[index] === returnRandomColor){
+            element.style.color = colorCycle[index]();
+            index++;
+            console.log(index)
+            return
+        }
         element.style.color = colorCycle[index];
         index++
         console.log(index)
-    }, 2000)
+    }, 1500)
 }
 cycleColors(name);
+
+function randomColor(){
+    return Math.floor(Math.random() * 256)
+}
+function returnRandomColor(){
+    const color = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+    console.log(color)
+    return color
+}
