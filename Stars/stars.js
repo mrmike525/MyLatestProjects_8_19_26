@@ -39,7 +39,7 @@ const cycleColors = (element) => {
         element.style.color = colorCycle[index];
         index++
         console.log(index)
-    }, 1500)
+    }, 500)
 }
 cycleColors(name);
 

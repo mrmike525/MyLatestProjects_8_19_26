@@ -11,7 +11,7 @@ body {
     position: relative;
     height: 95vh;
     background-color: black;
-    background-image: linear-gradient(to left, rgba(0,0,0,.8), rgb(172, 24, 24,.8)), url("./assets/mike.jpeg"); 
+    background-image: linear-gradient(to right, rgba(102, 48, 188, 0.8), rgb(172, 24, 24,.8)), url("./assets/mike.jpeg"); 
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body {
     top: 55%;
     transform: translateX(-50%);
     font-size: 50px;
-    transition: font-size 1s;
+    transition: font-size 2s, color 500ms;
     display: block;
     /* background-color: grey; */
     width: 100%;
