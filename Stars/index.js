@@ -2,7 +2,8 @@ const lightColors = [
     "lawngreen",
     "orangered",
     "gold",
-    "midnightblue"
+    "midnightblue",
+    "rgba(229, 32, 193, 0.8)"
 ];
 
 const lights = document.querySelectorAll('.light');
