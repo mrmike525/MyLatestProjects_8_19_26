@@ -1,0 +1,30 @@
+.calcSection {
+    min-height: 95vh;
+    border: 2px solid red;
+    position: relative;
+}
+.calcContainer {
+    position: absolute;
+    border: 2px solid black;
+    margin-top: 10px;
+    width: 275px;
+    left: 40%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+div button {
+    min-width: 50px;
+    border-radius: 40px;
+}
+.calcValue {
+    text-align: end;
+    
+}
+.calcValue span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.operator {
+    color: red;
+    font-weight: 600;
+}

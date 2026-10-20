@@ -1,0 +1,21 @@
+.mainContainer {
+    position: relative;
+}
+.subContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+}
+.h1 {
+    min-width: 20px;
+    min-height: 50px;
+    display: block;
+    font-weight: 300;
+    
+    /* border: 2px solid black; */
+}
+.button {
+    min-width: 50px;
+    color: red;
+}
