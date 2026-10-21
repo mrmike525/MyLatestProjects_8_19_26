@@ -111,9 +111,15 @@ const Calc = () => {
             <div className="calcSection">
                 <div className="calcContainer">
                     <div className="calcValue">
-                        <span>
-                            {valuesOrResult && valueOneOrTwo ? calcValueOne : calcValueTwo}
-                            {!valuesOrResult && `${result}`}</span>
+                        {valuesOrResult && <span>
+                            {
+                                valueOneOrTwo ? calcValueOne : calcValueTwo}
+                            </span>
+                         }
+                             
+                            <span>
+                            {!valuesOrResult && `${result}`}
+                            </span>
                     </div>
                     <div className="buttonContainer">
                         <div className="sectionOne">
