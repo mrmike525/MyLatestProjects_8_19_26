@@ -156,7 +156,7 @@ const Calc = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ position: "fixed", bottom: "100px"  }}>
+            <div style={{ position: "fixed", bottom: "100px", left: "10px"  }}>
             <div>{`Value One or Two Switch: ${valueOneOrTwo}`}</div>
                 <div>{`ValueOne: ${calcValueOne}`}</div>
                 <div>{`operator: ${selectedOperator=== null ? "Choose a Operator" : selectedOperator}`}</div>
