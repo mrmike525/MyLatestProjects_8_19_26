@@ -90,7 +90,7 @@ export default function App() {
           <div className="contact-bar" aria-label="Contact information">
             <a href="mailto:mrlange892@gmail.com">mrlange892@gmail.com</a>
             <a href="tel:+16513475903">(651) 347-5903</a>
-            <a href="https://github.com/mrmike525" target="_blank" rel="noreferrer">github.com/mrmike525</a>
+            <a href="https://github.com/mrmike525/MyLatestProjects_8_19_26/tree/Windows_11" target="_blank" rel="noreferrer">github.com/mrmike525</a>
             <a href="https://www.linkedin.com/in/michael-lange-sqa/" target="_blank" rel="noreferrer">LinkedIn profile</a>
           </div>
         </header>
