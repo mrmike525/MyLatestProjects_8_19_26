@@ -15,7 +15,12 @@ const Main = () => {
         <li>GitHub</li>
         <li>Regular expressions (Regex)</li>
         </ul>
-        <h3>Education</h3>
+            <h3>Education</h3>
+            <ul>
+                <li>SpringBoard Enterprise Software Development Course</li>
+                <li>Udemy Regular Expressions Course</li>
+            </ul>
+            
         </>
         
     )

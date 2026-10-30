@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: absolute;
+    left: 20%;
+}
+.description {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-bottom: .5em;
+    text-align: center;
+    width: 40vw;
+    padding-top: 1em;
+}
+.headline:hover {
+    background-image: url("./Photos/MikeProfessional.jpeg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 9vw;
+    
+}
+.headline {
+    height: 120px;
+    position: relative;
+    left: 10%;
+    /* width: 30%; */
+
+}
+.headlineContainer {
+    width: 30vw;
+}

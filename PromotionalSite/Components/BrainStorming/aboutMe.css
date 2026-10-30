@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.MikeContainer {
+    position: relative;
+    left: 50%;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url("./Photos/MikeProfessional.jpeg");
+    /* border-radius: 1000px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    transform: translateX(-50%);
+     text-align: center;
+}
+.FamilyContainer {
+    position: relative;
+    left: 50%;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url("./Photos/Family.jpeg");
+    /* border-radius: 1000px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    transform: translateX(-50%);
+     text-align: center;
+}
+.Shadowbox {
+    position: relative;
+    left: 50%;
+    height: 70vh;
+    overflow: hidden;
+    background-image: url("./Photos/ShadowBox.jpeg");
+    /* border-radius: 1000px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.MeInZone {
+    position: relative;
+    left: 50%;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url("./Photos/MeInZone.png");
+    /* border-radius: 1000px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    transform: translateX(-50%);
+     text-align: center;
+}
+/* .mikePro {
+    position: absolute;
+    height: 80vh;
+    left: 50%;
+    top: 50%;
+
+} */
+.family {
+    position: relative;
+}
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(222, 107, 76);
+    background-color: rgba(101, 91, 91, 0.475);
+    font-size: 30px;
+}
