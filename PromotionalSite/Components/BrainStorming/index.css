@@ -2,36 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: 1.5px;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: antiquewhite;
+    color: rgb(11, 99, 114);
 }
 header {
     position: absolute;
-    left: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .description {
-    width: 50%;
-    margin-bottom: 20px;
+    width: 50vw;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: larger;
 }
 
 .title {
     margin-bottom: .5em;
-    text-align: center;
+    text-align: start;
     width: 40vw;
     padding-top: 1em;
+    position: relative;
+    left: 10%;
 }
-.headline:hover {
+/* .headline:hover {
     background-image: url("./Photos/MikeProfessional.jpeg");
-    background-size: 50%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 9vw;
+    background-position: center;
     
-}
+    
+} */
 .headline {
     height: 120px;
     position: relative;
-    left: 10%;
-    /* width: 30%; */
+    /* left: 10%; */
+    background-image: url("./Photos/MikeProfessional.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 18%;
+    width: 70%;
+    text-align: right;
 
 }
 .headlineContainer {
     width: 30vw;
+    /* border: 2px solid red; */
 }

@@ -4,77 +4,51 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black;
+    background-color: antiquewhite;
 }
 .MikeContainer {
     position: relative;
     left: 50%;
-    height: 50vh;
+    height: 100vh;
     overflow: hidden;
     background-image: url("./Photos/MikeProfessional.jpeg");
     /* border-radius: 1000px; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 50%;
+    width: 100%;
     transform: translateX(-50%);
      text-align: center;
 }
-.FamilyContainer {
-    position: relative;
-    left: 50%;
-    height: 50vh;
-    overflow: hidden;
-    background-image: url("./Photos/Family.jpeg");
-    /* border-radius: 1000px; */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50%;
-    transform: translateX(-50%);
-     text-align: center;
-}
-.Shadowbox {
-    position: relative;
-    left: 50%;
-    height: 70vh;
-    overflow: hidden;
-    background-image: url("./Photos/ShadowBox.jpeg");
-    /* border-radius: 1000px; */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-.MeInZone {
-    position: relative;
-    left: 50%;
-    height: 50vh;
-    overflow: hidden;
-    background-image: url("./Photos/MeInZone.png");
-    /* border-radius: 1000px; */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50%;
-    transform: translateX(-50%);
-     text-align: center;
-}
-/* .mikePro {
-    position: absolute;
-    height: 80vh;
-    left: 50%;
-    top: 50%;
 
-} */
-.family {
-    position: relative;
-}
 .label {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(222, 107, 76);
+    /* color: rgb(222, 107, 76); */
+    color: antiquewhite;
     background-color: rgba(101, 91, 91, 0.475);
     font-size: 30px;
+}
+
+.pictureButton {
+    width: 60px;
+    border-color: rgb(11, 99, 114);
+    color: rgb(11, 99, 114);
+    background-color: antiquewhite;
+    border-radius: 25px;
+    font-size: larger;
+
+}
+.pictureButton a{
+    text-decoration: none;
+    color: rgb(11, 99, 114);
+}
+.pictureButton:hover {
+    border: 3px solid rgb(141, 70, 176)
+}
+
+.secondaryButtonContainer {
+    position: absolute;
+    bottom: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
 }
