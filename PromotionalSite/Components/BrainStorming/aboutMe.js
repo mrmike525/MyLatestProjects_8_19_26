@@ -4,7 +4,7 @@ const images =
     {id: 2, imageLocation: "./Photos/Family.jpeg", title: "Daughter, Fiance, & Me"},
     {id: 3, imageLocation: "./Photos/ShadowBox.jpeg", title: "Medals"},
     {id: 4, imageLocation: "./Photos/MeInZone.png", title: "Me in Baghdad Iraq"},
-    {id: 5, imageLocation: "./Photos/Dustin.png", title: "Brother"},
+    
 ]
 
 function extractData(id){
