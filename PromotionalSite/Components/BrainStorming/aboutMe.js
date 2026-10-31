@@ -14,14 +14,16 @@ function extractData(id){
 };
 
 function setImage(data){
+    
     const MikeContainer = document.body.querySelector('.MikeContainer');
     
     MikeContainer.style.backgroundImage = `url('${data.imageLocation}')`;
     const h3 = document.querySelector('.MikeContainer h3');
     h3.innerText = data.title
+
 }
-const imageFour = extractData(1);
-setImage(imageFour)
+
+
 
 const buttonContainer = document.querySelector('.buttonContainer');
 buttonContainer.addEventListener('click', (e) => {
