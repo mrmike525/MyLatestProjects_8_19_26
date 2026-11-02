@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.main {
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    position: relative;
+    /* overflow: auto; */
+}
+.main-paragraph {
+    height: 50vh;
+    background-color: orange;
+    position: relative;
+}

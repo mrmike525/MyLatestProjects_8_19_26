@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+.inputFields {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    left: 30%;
+    top: 10%;
+    margin-top: 15px;
+}
+.inputFields input {
+    background-color: orange;
+}
+.inputFields button {
+    background-color: orangered;
+}

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: "Tourney";
+}
+.nameBox {
+    position: relative;
+    height: 95vh;
+    background-color: black;
+    background-image: linear-gradient(to right, rgba(102, 48, 188, 0.8), rgb(172, 24, 24,.8)), url("./assets/mike.jpeg"); 
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    letter-spacing: 25px;
+}
+.name {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    transition: font-size 2s, color 500ms;
+    display: block;
+    /* background-color: grey; */
+    width: 100%;
+    text-align: center;
+      
+}
+.name:hover {
+    font-size: 100px;
+    
+    
+    
+}

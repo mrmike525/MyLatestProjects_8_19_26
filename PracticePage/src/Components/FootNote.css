@@ -1,0 +1,12 @@
+.mailto {
+    text-decoration: none;
+    color: orange;
+}
+.footdiv {
+    /* display: flex;
+    align-self: last baseline; */
+    margin-top: auto;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}

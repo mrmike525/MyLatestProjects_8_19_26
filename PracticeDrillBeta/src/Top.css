@@ -1,0 +1,31 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.headsection {
+    
+    
+    border: 4px solid green;
+    margin-bottom: auto;
+    display: flex;
+    
+
+}
+.headerdiv {
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headshot {
+    width: 10%;
+    border-radius: 400px;
+    border: 2px solid greenyellow;
+    
+}

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: antiquewhite;
+    color: rgb(11, 99, 114);
+}
+nav{
+   background-color: aliceblue;
+   /* min-width: 90vw */
+   /* display: flex; */
+   min-width: 60vw;
+   position: relative;
+}
+nav a{
+    text-decoration: none;
+    color: purple;
+    font-size: large;
+    /* padding: .2em; */
+    text-align: end;
+    position: relative;
+    left: 55%;
+    margin: .2em;
+
+}
+nav a:hover {
+    color: rgb(88, 197, 216);
+}
+nav > span {
+    position: relative;
+    left: 50%;
+    font-size: large;
+}
+.photoPage {
+    text-decoration: none;
+}
+.photoPage:hover {
+    color: rgb(88, 197, 216);
+}
+header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.description {
+    width: 50vw;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: larger;
+}
+
+.title {
+    margin-bottom: .5em;
+    text-align: start;
+    width: 40vw;
+    padding-top: 1em;
+    position: relative;
+    left: 10%;
+    font-size: 5rem;
+}
+
+.headline {
+    height: 120px;
+    position: relative;
+    /* left: 10%; */
+    background-image: url("./Photos/MikeProfessional.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 18%;
+    width: 70%;
+    text-align: right;
+
+}
+.headlineContainer {
+    width: 30vw;
+    /* border: 2px solid red; */
+}
+
+.linkBox {
+    position: absolute;
+    left: 40%;
+    width: 320px;
+    background-color: white;
+    
+
+}
+.linkBox ul{
+    list-style-type: none;
+
+    
+}
+li {
+    position: relative;
+    right: 50%;
+}
+
+.hidden {
+    visibility: ;
+}

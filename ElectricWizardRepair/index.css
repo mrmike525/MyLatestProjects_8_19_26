@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.main {
+    height: 97vh;
+    /* background-color: orange; */
+    position: relative;
+    background-image: 
+    linear-gradient(to right, rgba(136, 156, 21, 0.721), rgba(215, 80, 17, 0.776)),
+    url("./images/Ducks.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.nav {
+    position: fixed;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    background-color: rgba(33, 157, 202, 0.55);
+    
+}
+.nav .links {
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(27, 46, 211);
+    font-size: 30px;
+    /* position: fixed; */
+}
+
+.headingText {
+    display: inline-block;
+    /* width: 80vw; */
+    max-width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 40px;
+    color: rgb(195, 255, 0);
+    letter-spacing: 2px;
+}
+
+.middle {
+    height: 100vh;
+    background-image: url("./images/swan.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

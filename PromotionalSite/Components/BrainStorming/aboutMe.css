@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+}
+.MikeContainer {
+    position: relative;
+    left: 50%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("./Photos/MikeProfessional.jpeg");
+    /* border-radius: 1000px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    transform: translateX(-50%);
+     text-align: center;
+     transition: background-image 1s ease-in-out 0.1s;
+}
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: rgb(222, 107, 76); */
+    color: antiquewhite;
+    background-color: rgba(101, 91, 91, 0.475);
+    font-size: 30px;
+}
+
+.pictureButton {
+    width: 60px;
+    border-color: rgb(11, 99, 114);
+    color: rgb(11, 99, 114);
+    background-color: antiquewhite;
+    border-radius: 25px;
+    font-size: larger;
+
+}
+.pictureButton a{
+    text-decoration: none;
+    color: rgb(11, 99, 114);
+}
+.pictureButton:hover {
+    border: 3px solid rgb(141, 70, 176)
+}
+
+.secondaryButtonContainer {
+    position: absolute;
+    bottom: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
+}
