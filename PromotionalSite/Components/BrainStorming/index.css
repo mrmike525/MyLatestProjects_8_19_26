@@ -17,13 +17,15 @@ body {
 
 nav{
    background-color: aliceblue;
-   min-width: 60vw;
+   max-width: 70vw;
    position: relative;
+   z-index: 99;
+   left:  15vw;
 }
 
 .navTitle {
     position: relative;
-    left: 50%;
+    left: 56%;
     font-size: large;
 }
 
@@ -45,12 +47,12 @@ nav{
 
 .projectButton {
     border: none;
-  
+  font-size: medium;
 }
 
 .projectDiv {
     position: absolute;
-    left: 71%;
+    left: 55vw;
     width: auto;
     background-color: white;
     z-index: 10;
@@ -72,7 +74,39 @@ nav{
 .linkList > a:hover {
     color: rgb(88, 197, 216);
 }
+header {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+main {
+    position: relative;
+    top: .1vh;
+    width: 60%;
+    margin-left: 10%;
+}
+.title {
+    font-size: 7em;
+    position: relative;
+    margin-left: 2vw;
+    margin-bottom: 3%;
+    width: 100vw;
+    text-align: center;
+}
+.headlineContainer {
+    width: 44vw;
+}
+.headline {
+    height: 15em;
+    position: relative;
+    background-image: url("./Photos/MikeProfessional.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    text-align: center;
+    margin-left: 17vw;
 
+}
 .photoPage {
     text-decoration: none;
 }
@@ -81,44 +115,17 @@ nav{
     color: rgb(88, 197, 216);
 }
 
-header {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .description {
-    width: 50vw;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 30px;
     font-size: larger;
+    margin-left:  1vw;
 }
 
-.title {
-    margin-bottom: .5em;
-    text-align: start;
-    width: 40vw;
-    padding-top: 1.2em;
-    position: relative;
-    left: 10%;
-    font-size: 5rem;
-}
 
-.headline {
-    height: 120px;
-    position: relative;
-    background-image: url("./Photos/MikeProfessional.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 18%;
-    width: 70%;
-    text-align: right;
 
-}
 
-.headlineContainer {
-    width: 30vw;
-}
+
 
 
 
