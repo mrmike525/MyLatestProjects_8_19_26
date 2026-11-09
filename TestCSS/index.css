@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    position: relative;
+    border: 2px solid orange;
+    min-width: 90vw;
+    min-height: 2vh;
+    
+    right: 10%;
+    text-align: center;
+}
+nav a{
+    position: relative;
+    /* left: 80%; */
+}
+.parentDiv {
+    position: absolute;
+    left: 10%;
+    top: 2em;
+    border: 2px solid red;
+}
+.childDiv a {
+    display: block;
+    padding: .25em;
+    
+}
+.childDiv {
+    visibility: hidden;
+}
+/* .parentDiv {
+    position: absolute;
+    left: 40%;
+    top: 500%;
+    border: 2px solid red;
+    text-align: start;
+} */
